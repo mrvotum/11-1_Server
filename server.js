@@ -125,8 +125,8 @@ app.use(router.routes()).use(router.allowedMethods());
 // const server = http.createServer(app.callback()).listen(port)
 // server.listen(port);
 
-const port = 7075;
-http.createServer(app.callback()).listen(port);
+// const port = 7075;
+// http.createServer(app.callback()).listen(port);
 
-// app.use(router.routes()).use(router.allowedMethods());
-// http.createServer(app.callback()).listen(process.env.PORT || 7075);
+app.use(router.routes()).use(router.allowedMethods());
+http.createServer(app.callback()).listen(process.env.PORT || 7075);
