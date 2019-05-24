@@ -108,7 +108,7 @@ router.get('/sse', async (ctx) => {
         } else {
           clearTimeout(timerId); // останавливаем трансляцию
         }
-      }, 500);
+      }, 2500);
     }
   });
 
